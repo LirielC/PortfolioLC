@@ -44,7 +44,7 @@ import { FaGithub, FaExternalLinkAlt, FaFolderOpen } from 'react-icons/fa';
     demo: 'https://github.com/LirielC/FakeNewsDetector',
     status: 'Em desenvolvimento',
     features: ['Pré-processamento de Texto', 'Treinamento de Modelos', 'Avaliação de Precisão', 'Interface CLI'],
-    image: '/fakenews.png'
+    image: 'assets/fakenews.png'
   }
 ];
 
