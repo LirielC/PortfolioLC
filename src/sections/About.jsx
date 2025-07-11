@@ -3,7 +3,7 @@ import { FaUser } from 'react-icons/fa';
 export default function About() {
   return (
     <section id="about" className="flex flex-col items-center justify-center" style={{ minHeight: 'calc(100vh - 112px)' }}>
-      <div className="w-full max-w-xl mx-auto bg-white/40 backdrop-blur-2xl border border-white/40 shadow-xl rounded-3xl px-10 py-14 flex flex-col items-center relative overflow-hidden">
+      <div className="w-full max-w-xl mx-auto bg-white/40 backdrop-blur-2xl border border-white/40 shadow-xl rounded-3xl px-4 py-8 sm:px-10 sm:py-14 flex flex-col items-center relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-white/70 to-transparent rounded-t-3xl pointer-events-none" />
         <div className="w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center text-cyan-700 text-4xl font-bold mb-6 drop-shadow-xl">
           <FaUser />

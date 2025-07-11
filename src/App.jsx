@@ -36,7 +36,7 @@ function App() {
       <Sidebar />
       <MainContent>
         <Header title={sectionTitles[section] || 'Portfólio'} />
-        <div className="px-8 pb-24 pt-6 max-w-5xl mx-auto">
+        <div className="px-2 sm:px-8 pb-24 pt-6 max-w-full sm:max-w-5xl mx-auto w-full">
           {section === 'about' && <About />}
           {section === 'skills' && <Skills />}
           {section === 'projects' && <Projects />}

@@ -63,7 +63,7 @@ export default function Projects() {
 
   return (
     <section id="projects" ref={sectionRef} className="flex flex-col items-center justify-center" style={{ minHeight: 'calc(100vh - 112px)' }}>
-      <div className="w-full max-w-4xl mx-auto flex flex-col gap-12">
+      <div className="w-full max-w-4xl mx-auto flex flex-col gap-6 sm:gap-12 px-2 sm:px-0">
         <div className="flex items-center justify-center mb-4">
           <div className="w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center text-cyan-700 text-4xl font-bold drop-shadow-xl mr-4">
             <FaFolderOpen />
@@ -76,16 +76,16 @@ export default function Projects() {
         {projects.map((project, idx) => (
           <div
               key={project.id}
-            className={`flex flex-col md:flex-row bg-white/40 backdrop-blur-2xl border border-white/40 shadow-xl rounded-3xl overflow-hidden relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            className={`flex flex-col md:flex-row bg-white/40 backdrop-blur-2xl border border-white/40 shadow-xl rounded-3xl overflow-hidden relative transition-all duration-700 w-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: `${idx * 100}ms` }}
           >
             <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-white/70 to-transparent rounded-t-3xl pointer-events-none" />
             {/* Imagem */}
-            <div className="md:w-1/3 flex items-center justify-center p-6">
-              <img src={project.image} alt={project.title} className="w-full h-44 object-contain rounded-2xl shadow-md bg-white/40" />
+            <div className="w-full md:w-1/3 flex items-center justify-center p-4 sm:p-6">
+              <img src={project.image} alt={project.title} className="w-full h-36 sm:h-44 object-contain rounded-2xl shadow-md bg-white/40" />
         </div>
             {/* Detalhes */}
-            <div className="flex-1 flex flex-col justify-between p-8 gap-4">
+            <div className="flex-1 flex flex-col justify-between p-4 sm:p-8 gap-3 sm:gap-4">
               <div>
                 <div className="flex items-center gap-4 mb-2">
                   <h3 className="font-black text-2xl text-cyan-900 drop-shadow">{project.title}</h3>

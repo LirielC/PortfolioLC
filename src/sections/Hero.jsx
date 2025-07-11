@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center md:justify-start">
-      <div className="relative z-10 max-w-5xl mx-auto px-8 py-24 text-center md:text-left">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 py-10 sm:px-8 sm:py-24 text-center md:text-left">
         <div className={`transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
