@@ -11,7 +11,7 @@ import { FaGithub, FaExternalLinkAlt, FaFolderOpen } from 'react-icons/fa';
       demo: 'https://sistema-biblioteca-zu8d.onrender.com/login',
       status: 'Completo',
       features: ['Gerenciamento de Vendas', 'Sistema de Empréstimos', 'Gestão de Clientes', 'Controle de Estoque'],
-      image: '/Sistb.png'
+      image: 'assets/Sistb.png'
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ import { FaGithub, FaExternalLinkAlt, FaFolderOpen } from 'react-icons/fa';
       demo: 'https://lirielc.github.io/-NetArchitect-.github.io/',
       status: 'Completo',
       features: ['Landing Page', 'Design Responsivo', 'Simulação Consultoria', 'Deploy GitHub Pages'],
-      image: '/netartitech.png'
+      image: 'assets/netartitech.png'
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ import { FaGithub, FaExternalLinkAlt, FaFolderOpen } from 'react-icons/fa';
       demo: 'https://lirielc.github.io/-ProCurriculum-.github.io/',
       status: 'Completo',
       features: ['Templates Modernos', 'Export PDF', 'Interface Responsiva'],
-      image: '/procurriculum.png'
+      image: 'assets/procurriculum.png'
   },
   {
     id: 4,

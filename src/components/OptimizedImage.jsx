@@ -18,7 +18,7 @@ const OptimizedImage = ({
   // Gerar URLs otimizadas baseadas no src original
   const getOptimizedUrls = (originalSrc) => {
     const filename = originalSrc.split('/').pop().split('.')[0]
-    const basePath = '/images/optimized/'
+    const basePath = import.meta.env.BASE_URL + 'images/optimized/'
     
     const urls = {
       webp: {
@@ -95,7 +95,6 @@ const OptimizedImage = ({
     }
   }
 
-  // Gerar srcSet para responsividade
   const getSrcSet = () => {
     if (hasError) return ''
     
