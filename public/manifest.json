@@ -1,0 +1,25 @@
+{
+  "name": "Liriel Castro - Portfólio",
+  "short_name": "Liriel Portfolio",
+  "description": "Portfólio de Liriel Castro, desenvolvedora full stack",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["portfolio", "developer", "education"]
+} 

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply font-sans text-white overflow-x-hidden;
+  }
+  
+  body {
+    background: #0f172a;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@layer components {
+  .glass-container {
+    @apply bg-white/[0.01] backdrop-blur-sm border border-white/[0.03] rounded-2xl;
+    transition: all 0.3s ease;
+  }
+
+  .glass-card {
+    @apply bg-white/[0.02] backdrop-blur-sm border border-white/[0.05] rounded-xl;
+    transition: all 0.2s ease;
+  }
+
+  .glass-card:hover {
+    @apply bg-white/[0.04] border-white/[0.08];
+    transform: translateY(-1px);
+  }
+
+  .glass-button {
+    @apply bg-white/[0.03] backdrop-blur-sm border border-white/[0.08] text-white font-light px-8 py-4 rounded-xl text-sm;
+    transition: all 0.2s ease;
+    letter-spacing: 0.025em;
+  }
+
+  .glass-button:hover {
+    @apply bg-white/[0.08] border-white/[0.12];
+    transform: translateY(-1px);
+  }
+
+  .glass-button-primary {
+    @apply bg-white/90 text-primary-900 font-light px-8 py-4 rounded-xl text-sm;
+    transition: all 0.2s ease;
+    letter-spacing: 0.025em;
+    backdrop-filter: blur(8px);
+  }
+
+  .glass-button-primary:hover {
+    @apply bg-white;
+    transform: translateY(-1px);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nav-glass {
+    @apply bg-primary-900/50 backdrop-blur-md border-b border-white/[0.03];
+  }
+
+  .section-padding {
+    @apply py-32 px-8;
+  }
+
+  .project-card {
+    @apply glass-card p-8 group cursor-pointer;
+  }
+
+  .project-card:hover {
+    @apply bg-white/[0.04] border-white/[0.08];
+    transform: translateY(-2px);
+  }
+
+  .form-input {
+    @apply bg-white/[0.02] border border-white/[0.08] rounded-xl px-6 py-4 text-white placeholder-white/40;
+    backdrop-filter: blur(8px);
+    transition: all 0.2s ease;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+
+  .form-input:focus {
+    @apply border-white/[0.15] outline-none;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .form-textarea {
+    @apply form-input resize-none min-h-[140px];
+  }
+
+  .text-display-1 {
+    @apply text-6xl md:text-7xl lg:text-8xl font-extralight tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  .text-display-2 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-extralight tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  .text-heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-light tracking-tight;
+    letter-spacing: -0.025em;
+  }
+
+  .text-heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-light tracking-tight;
+    letter-spacing: -0.025em;
+  }
+
+  .text-heading-3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-light tracking-tight;
+    letter-spacing: -0.025em;
+  }
+
+  .text-body-large {
+    @apply text-xl md:text-2xl leading-relaxed font-light;
+    letter-spacing: 0.015em;
+  }
+
+  .text-body {
+    @apply text-lg leading-relaxed font-light;
+    letter-spacing: 0.015em;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    @apply py-20 px-6;
+  }
+} 
