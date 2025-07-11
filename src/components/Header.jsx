@@ -18,11 +18,8 @@ export default function Header({ title, section, children }) {
   ];
 
   const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
+    window.location.hash = href;
+    setIsMobileMenuOpen(false);
   };
 
   return (
