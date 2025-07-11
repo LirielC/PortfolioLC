@@ -21,7 +21,7 @@ export default function Skills() {
             <span
               key={skill}
               className="px-4 py-2 rounded-full border border-white/40 bg-white/60 text-cyan-900 font-semibold text-base shadow-sm backdrop-blur hover:bg-white/80 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
-            >
+                  >
               {skill}
             </span>
           ))}
@@ -29,4 +29,4 @@ export default function Skills() {
       </div>
     </section>
   );
-} 
+}

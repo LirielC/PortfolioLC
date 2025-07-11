@@ -1,39 +1,39 @@
 import { useEffect, useRef, useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaFolderOpen } from 'react-icons/fa';
 
-const projects = [
-  {
-    id: 1,
-    title: 'Sistema de Gerenciamento de Biblioteca',
-    description: 'Sistema completo em Java para gerenciamento de bibliotecas com vendas, empréstimos e integração Stripe.',
-    tech: ['Java', 'Spring Boot', 'Spring', 'Vaadin', 'PostgreSQL', 'Stripe API'],
-    github: 'https://github.com/LirielC/SistemaGerenciamentoBiblioteca',
-    demo: 'https://sistema-biblioteca-zu8d.onrender.com/login',
-    status: 'Completo',
-    features: ['Gerenciamento de Vendas', 'Sistema de Empréstimos', 'Gestão de Clientes', 'Controle de Estoque'],
-    image: '/Sistb.png'
-  },
-  {
-    id: 2,
-    title: 'NetArchitect',
-    description: 'Projeto acadêmico simulando uma consultoria especializada em redes. Site desenvolvido para demonstrar serviços de infraestrutura e soluções de rede.',
-    tech: ['React', 'JavaScript', 'HTML/CSS', 'GitHub Pages'],
-    github: 'https://github.com/LirielC/-NetArchitect-.github.io',
-    demo: 'https://lirielc.github.io/-NetArchitect-.github.io/',
-    status: 'Completo',
-    features: ['Landing Page', 'Design Responsivo', 'Simulação Consultoria', 'Deploy GitHub Pages'],
-    image: '/netartitech.png'
-  },
-  {
-    id: 3,
-    title: 'ProCurriculum',
-    description: 'Aplicação web moderna para criação de currículos profissionais com interface intuitiva.',
-    tech: ['JavaScript', 'HTML/CSS', 'jsPDF'],
-    github: 'https://github.com/LirielC/-ProCurriculum-.github.io',
-    demo: 'https://lirielc.github.io/-ProCurriculum-.github.io/',
-    status: 'Completo',
-    features: ['Templates Modernos', 'Export PDF', 'Interface Responsiva'],
-    image: '/procurriculum.png'
+  const projects = [
+    {
+      id: 1,
+      title: 'Sistema de Gerenciamento de Biblioteca',
+      description: 'Sistema completo em Java para gerenciamento de bibliotecas com vendas, empréstimos e integração Stripe.',
+      tech: ['Java', 'Spring Boot', 'Spring', 'Vaadin', 'PostgreSQL', 'Stripe API'],
+      github: 'https://github.com/LirielC/SistemaGerenciamentoBiblioteca',
+      demo: 'https://sistema-biblioteca-zu8d.onrender.com/login',
+      status: 'Completo',
+      features: ['Gerenciamento de Vendas', 'Sistema de Empréstimos', 'Gestão de Clientes', 'Controle de Estoque'],
+      image: '/Sistb.png'
+    },
+    {
+      id: 2,
+      title: 'NetArchitect',
+      description: 'Projeto acadêmico simulando uma consultoria especializada em redes. Site desenvolvido para demonstrar serviços de infraestrutura e soluções de rede.',
+      tech: ['React', 'JavaScript', 'HTML/CSS', 'GitHub Pages'],
+      github: 'https://github.com/LirielC/-NetArchitect-.github.io',
+      demo: 'https://lirielc.github.io/-NetArchitect-.github.io/',
+      status: 'Completo',
+      features: ['Landing Page', 'Design Responsivo', 'Simulação Consultoria', 'Deploy GitHub Pages'],
+      image: '/netartitech.png'
+    },
+    {
+      id: 3,
+      title: 'ProCurriculum',
+      description: 'Aplicação web moderna para criação de currículos profissionais com interface intuitiva.',
+      tech: ['JavaScript', 'HTML/CSS', 'jsPDF'],
+      github: 'https://github.com/LirielC/-ProCurriculum-.github.io',
+      demo: 'https://lirielc.github.io/-ProCurriculum-.github.io/',
+      status: 'Completo',
+      features: ['Templates Modernos', 'Export PDF', 'Interface Responsiva'],
+      image: '/procurriculum.png'
   },
   {
     id: 4,
@@ -75,7 +75,7 @@ export default function Projects() {
         </p>
         {projects.map((project, idx) => (
           <div
-            key={project.id}
+              key={project.id}
             className={`flex flex-col md:flex-row bg-white/40 backdrop-blur-2xl border border-white/40 shadow-xl rounded-3xl overflow-hidden relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: `${idx * 100}ms` }}
           >
@@ -83,7 +83,7 @@ export default function Projects() {
             {/* Imagem */}
             <div className="md:w-1/3 flex items-center justify-center p-6">
               <img src={project.image} alt={project.title} className="w-full h-44 object-contain rounded-2xl shadow-md bg-white/40" />
-            </div>
+        </div>
             {/* Detalhes */}
             <div className="flex-1 flex flex-col justify-between p-8 gap-4">
               <div>
@@ -109,7 +109,7 @@ export default function Projects() {
                 </a>
                 <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-2 rounded-full bg-blue-500/90 text-white font-bold shadow hover:bg-blue-600 hover:scale-105 transition-all duration-300">
                   <FaExternalLinkAlt /> Demo
-                </a>
+                  </a>
               </div>
             </div>
           </div>
@@ -117,4 +117,4 @@ export default function Projects() {
       </div>
     </section>
   );
-} 
+}

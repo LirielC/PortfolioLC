@@ -1,36 +1,36 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
-const contactInfo = [
-  {
-    icon: FaEnvelope,
-    label: 'Email',
+  const contactInfo = [
+    {
+      icon: FaEnvelope,
+      label: 'Email',
     value: 'lirielcastror@gmail.com',
     href: 'mailto:lirielcastror@gmail.com'
-  },
-  {
-    icon: FaMapMarkerAlt,
-    label: 'Localização',
-    value: 'Rio de Janeiro, RJ',
-    href: '#'
-  }
+    },
+    {
+      icon: FaMapMarkerAlt,
+      label: 'Localização',
+      value: 'Rio de Janeiro, RJ',
+      href: '#'
+    }
 ];
 
-const socialLinks = [
-  {
-    icon: FaGithub,
-    label: 'GitHub',
-    href: 'https://github.com/LirielC'
-  },
-  {
-    icon: FaLinkedin,
-    label: 'LinkedIn',
+  const socialLinks = [
+    {
+      icon: FaGithub,
+      label: 'GitHub',
+      href: 'https://github.com/LirielC'
+    },
+    {
+      icon: FaLinkedin,
+      label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/lirielcastro/'
-  },
-  {
-    icon: FaEnvelope,
-    label: 'Email',
+    },
+    {
+      icon: FaEnvelope,
+      label: 'Email',
     href: 'mailto:lirielcastror@gmail.com'
-  }
+    }
 ];
 
 export default function Contact() {
@@ -47,33 +47,33 @@ export default function Contact() {
         </p>
         <div className="w-full flex flex-col gap-6 mb-8">
           {contactInfo.map((item, idx) => (
-            <a
-              key={item.label}
-              href={item.href}
+                  <a
+                    key={item.label}
+                    href={item.href}
               className="flex items-center gap-5 px-6 py-4 rounded-xl border border-white/40 bg-white/60 text-cyan-900 shadow hover:bg-white/80 hover:shadow-lg hover:scale-105 transition-all duration-300 backdrop-blur"
-            >
+                  >
               <item.icon className="text-cyan-500 text-2xl drop-shadow-md" />
-              <div>
+                    <div>
                 <div className="text-sm text-cyan-700 font-semibold">{item.label}</div>
                 <div className="text-base font-sans">{item.value}</div>
+                    </div>
+                  </a>
+                ))}
               </div>
-            </a>
-          ))}
-        </div>
         <div className="flex gap-6 mt-2">
           {socialLinks.map((link, idx) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
               className="p-4 rounded-full border border-white/40 bg-white/60 text-cyan-600 shadow hover:bg-white/80 hover:shadow-lg hover:text-cyan-800 hover:scale-110 transition-all duration-300 backdrop-blur"
-            >
+                  >
               <link.icon className="text-2xl" />
-            </a>
-          ))}
+                  </a>
+                ))}
         </div>
       </div>
     </section>
   );
-} 
+}

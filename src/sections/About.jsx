@@ -12,7 +12,7 @@ export default function About() {
         <span className="text-cyan-900/80 text-lg font-semibold mb-6 drop-shadow text-center">Estudante de Ciência da Computação</span>
         <p className="font-sans text-lg text-cyan-900/90 text-center leading-relaxed mb-8 drop-shadow">
           Apaixonada por criar soluções digitais que unem funcionalidade e design elegante. Busco oportunidades para crescer como desenvolvedora e contribuir para projetos inovadores.
-        </p>
+                </p>
         <ul className="w-full flex flex-col gap-3 mb-8">
           <li className="flex items-center gap-2 text-cyan-900/80 font-sans text-base"><span className="text-cyan-700">•</span> 3+ anos de estudo em Ciência da Computação</li>
           <li className="flex items-center gap-2 text-cyan-900/80 font-sans text-base"><span className="text-cyan-700">•</span> 10+ projetos pessoais desenvolvidos</li>
@@ -22,4 +22,4 @@ export default function About() {
       </div>
     </section>
   );
-} 
+}
